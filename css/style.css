@@ -1363,8 +1363,9 @@ color: var(--text-color);
         font-size: 13px !important;
     }
     .who-we1 .card p{
-        font-size: 14px !important;
+        font-size: 13px !important;
         text-align: justify;
+        line-height: 22px !important;
     }
     .first-sec .row .col-lg-4.col-md-4.col-sm-12.wow.fadeIn{
         margin-top: 0px !important;
