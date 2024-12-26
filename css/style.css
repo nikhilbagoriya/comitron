@@ -1,11 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Merienda:wght@300..900&display=swap');
 :root{
     --main-color: #ede8f5;
     --main-color2: #adbbda;
     --text-color: #7091e6;
     --text-color2: #3d52a0;
     --icon-color: #7091e6;
+    --heading-font-family: "Libre Baskerville", serif;
+    --heading-font-family1: "Libre Baskerville", serif;
+
 }
 /*** Spinner Start ***/
+
+h1,h2,h3,h4,h5,h6,b,small{
+    font-family: var(--heading-font-family) !important;
+}
+a,p,li{
+    font-family: var(--heading-font-family1) !important;
+}
 
 #spinner {
     opacity: 0;
@@ -567,6 +579,7 @@
 }
 .pro-det .plan_heading h4{
     color: var(--main-color);
+    font-size: 18px !important;
 }
 .pro-det .plan_heading{
     background-color: var(--text-color2);
@@ -962,6 +975,7 @@
       }
       .rating-sec a h4{
           color: var(--text-color2);
+          font-size: 20px !important;
         }
         .rating-sec i{
             color: var(--text-color2);
@@ -1015,7 +1029,7 @@
       .customer-feedback .owl-nav [class*="owl-"] {
         position: relative;
         display: inline-block;
-        bottom: 45px;
+        bottom: 67px;
         transition: all .2s ease-in;
       }
       
@@ -1182,7 +1196,7 @@ color: var(--text-color);
     color: var(--text-color);
 }
 .main-form input#name,input#email,input#project,textarea#message{
-    background-color: var(--main-color2);
+    /* background-color: var(--main-color2); */
     color: var(--bs-dark);
 }
 .main-form ::placeholder{
@@ -1202,11 +1216,16 @@ color: var(--text-color);
 .First-con-det i{
     color: var(--main-color);
 }
+.con-det{
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+}
 .con-det h3{
     color: var(--text-color2);
 }
 .con-det a{
     color: var(--text-color);
+    font-size: 16px;
 }
 .con-det a:hover{
     color: var(--text-color2);
@@ -1223,9 +1242,61 @@ color: var(--text-color);
 .testo-cli .customer-name{
     color: var(--text-color2);
 }
-
-
+.carousel-item h1{
+    font-size: 65px;
+}
+.project1-sec h1{
+    font-size: 29px;
+    line-height: 40px;
+}
+.about-contant h1,.service-sec h1{
+    font-size: 33px;
+    line-height: 48px;
+}
+.customer-feedback div h2,.client-sec div h1,.team h1,.con-sec h1,.blog h1{
+    font-size: 33px;
+}
+.who-we1 .card .card-body p{
+    text-align: justify !important;
+}
+.about-contant p,.blog .blog-content p,.testimonial-item div p,.name-com p,.why-choose p,.why-choose ul li,.who-we p,.first-sec p{
+    text-align: justify !important;
+}
+.first-sec .py-3{
+    text-align: unset !important;
+}
 @media only screen and (min-width: 320px) and (max-width: 425px) {
+    .con-sec{
+        padding-top: 30px !important;
+        padding-bottom: 0px !important;
+    }
+    .feedback-slider-item p{
+        text-align: justify !important;
+    }
+    .project1{
+        padding-top: 0px !important;
+    }
+    .testimonial-cli-rew {
+        padding-top: 0px !important;
+        /* padding-bottom: 0px !important; */
+    }
+    .carousel-item h1{
+        font-size: 16px !important;
+    }
+    .carousel-item p{
+        font-size: 10px !important;
+    }
+    .project1 h1,.project1-sec h1{
+        font-size: 16px !important;
+        line-height: 25px !important;
+    }
+    .about-contant h1,.service-sec h1{
+        font-size: 20px !important;
+        line-height: 25px !important;
+    }
+    .customer-feedback div h2,.client-sec div h1,.team h1,.con-sec h1,.blog h1{
+        font-size: 22px !important;
+    }
     .contact-detail{
         padding: 0.5rem !important;
       }
@@ -1254,7 +1325,7 @@ color: var(--text-color);
     .navbar-dark .navbar-toggler{
         background-color: var(--text-color2);
     }
-    .service-sec,.testimonial-cli-rew,.team,.con-sec{
+    .service-sec,.team{
         padding-top: 0px !important;
         padding-bottom: 0px !important;
     }
