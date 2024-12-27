@@ -1265,6 +1265,15 @@ color: var(--text-color);
 .first-sec .py-3{
     text-align: unset !important;
 }
+#pre-loader{
+    background: black url('/img/comitron_preloader.gif') no-repeat center center;
+    background-size:100%;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 1000;
+}
+
 @media only screen and (min-width: 320px) and (max-width: 425px) {
     .con-sec{
         padding-top: 30px !important;
