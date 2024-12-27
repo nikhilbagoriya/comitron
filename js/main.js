@@ -175,3 +175,10 @@ jQuery(document).ready(function($) {
     
   }); //end ready
 //testomonial clien review End
+
+var loader=document.getElementById("pre-loader");
+window.addEventListener("load", function(){
+    this.setTimeout(function () {
+        loader.style.display="none";
+    },3000);
+});
